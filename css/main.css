@@ -591,8 +591,71 @@ i:hover {
   display: none;
 }
 
+.footer {
+  background-color: #2D314D;
+  padding: 48px 0;
+}
+
+.footer__wrapper {
+  max-width: 100%;
+  display: flex;
+  align-items: start;
+}
+
+.footer__item-wrap {
+  display: flex;
+  align-items: start;
+}
+
+.footer__about {
+  width: 100%;
+  max-width: 140px;
+  margin-left: 140px;
+  padding-left: 0;
+}
+.footer__careers {
+  padding-left: 0;
+  margin-left: 90px;
+  width: 100%;
+  max-width: 140px;
+}
 
 
+.footer__link {
+  display: block;
+  padding: 4px 0;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.234375px;
+  color: #FFFFFF;
+
+}
+
+.footer__btn {
+  margin-left: auto;
+  text-align: end;
+}
+.footer__href {
+  display: inline-block;
+  padding: 8px 34px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+}
+
+.footer__text {
+font-size: 15px;
+line-height: 26px;
+text-align: end;
+letter-spacing: -0.234375px;
+color: #fff;
+mix-blend-mode: normal;
+opacity: 0.5;
+}
 
 
 
@@ -711,9 +774,8 @@ i:hover {
     margin-right: 100px;
   }
 
-  .section-4-in .cardd {
-    align-items: center;
-    padding-left: 70px;
+  .footer__about, .footer__careers {
+    display: none;
   }
 
 }
@@ -778,12 +840,12 @@ i:hover {
     padding: 20px 0;
     position: relative;
   }
-  
+
   .hero {
     background-image: url(../images/hero-phones-desktop.svg), url(../images/phones-mobile.png);
     background-repeat: no-repeat;
     background-size: 327px 402px, 1900px 398px;
-    background-position:calc(50% + 0px) calc(50% + -267px), calc(50% + 358px) calc(10% + -100px);
+    background-position: calc(50% + 0px) calc(50% + -267px), calc(50% + 358px) calc(10% + -100px);
     left: 0;
     top: 0;
   }
@@ -838,7 +900,7 @@ i:hover {
   }
 
 
-  
+
   .site-nav-on .bars {
     width: 18px;
     height: 19px;
@@ -846,7 +908,7 @@ i:hover {
     background-size: cover;
   }
 
-  
+
   .btn1 {
     display: none;
   }
@@ -857,14 +919,14 @@ i:hover {
     text-align: center;
     letter-spacing: -0.138462px;
     color: #2D314D;
-     padding: 10px 0;
-    }
-    
-    .menu {
+    padding: 10px 0;
+  }
+
+  .menu {
     flex-direction: column;
     padding: 10px 0;
     background-color: #fff;
-    
+
   }
 
   .bars {
@@ -993,6 +1055,68 @@ i:hover {
     padding: 8px 0;
   }
 
+  .footer__about, .footer__careers {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+    max-width:800px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer__wrapper {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: start;
+  }
+  
+  .footer__link {
+    display: flex;
+    padding-bottom: 8px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+  }
+  
+
+  .footer__btn {
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+  }
+
+  .footer__href {
+    display: inline-block;
+    padding: 8px 34px;
+    margin-top: 28px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    border-radius: 22px;
+  }
+  
+  .footer__text {
+  font-size: 15px;
+  line-height: 26px;
+  text-align:center;
+  letter-spacing: -0.234375px;
+  color: #fff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  }
+  
+  .footer__item-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+ 
 }
 
 
@@ -1099,12 +1223,12 @@ i:hover {
 }
 
 @media only screen and (max-width:332px) {
-  
+
   .hero {
     background-image: url(../images/hero-phones-desktop.svg), url(../images/phones-mobile.png);
     background-repeat: no-repeat;
     background-size: 327px 402px, 1900px 398px;
-    background-position:calc(50% + 0px) calc(50% + -250px), calc(50% + 355px) calc(10% + -66px);
+    background-position: calc(50% + 0px) calc(50% + -250px), calc(50% + 355px) calc(10% + -66px);
     left: 0;
     top: 0;
   }
